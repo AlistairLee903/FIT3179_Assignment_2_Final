@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "New cases of COVID-19 weekly in each region",
+      "font": "Helvetica Neue",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "fontSize": 22,
+      "align": "center"
+    },
+    "background": "#CAD2C5",
+    "description": "Bar Chart",
+    "width": 250,
+    "height": 170,
+    "data": {
+      "url": "https://raw.githubusercontent.com/AlistairLee903/Covid_data_latt_long/main/Covid-19_merged%20with%20latt%20and%20long.csv"
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar", "width": {"band": 0.1}},
+        "encoding": {
+          "x":{"field": "New Cases (7 days)", "type": "quantitative", "axis":
+          {"labelAngle": 0}},
+          "y":{
+            "field": "Region",
+            "type": "nominal",
+            "axis": {"title": "Region"}
+          }
+  
+          }
+  
+        }
+  
+  ]
+  
+  }
+              
+            
+      
+  
+    
+    

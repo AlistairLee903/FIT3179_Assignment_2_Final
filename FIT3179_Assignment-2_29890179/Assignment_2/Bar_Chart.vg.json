@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "title": {
+      "text": "Total deaths per hundred 100k people in each region",
+      "font": "Helvetica Neue",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "fontSize": 22,
+      "align": "center"
+    },
+    "background": "#CAD2C5",
+    "width": 350,"height": 100,
+    "data": {
+      "url": "https://raw.githubusercontent.com/AlistairLee903/Covid_data_latt_long/main/Covid-19_merged%20with%20latt%20and%20long.csv"
+      }
+    ,
+  "layer":[{"mark": {"type": "bar", "width": {"band": 0.1}},
+            "encoding": {
+            "x": {"field": "Region", "type": "nominal", "axis": {"labelAngle": 45}},
+           "y": {"field": "Total Deaths per 100k pop", "type": "quantitative"}
+      
+    }
+  
+  
+  }
+    
+    
+  
+  ]
+    
+    
+    
+  }
+  
